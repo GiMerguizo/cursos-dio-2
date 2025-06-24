@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form name="cadastro" autocomplete="off" onsubmit="alert('Enviado com sucesso!');">
+        <label>Text*: </label><input type="text" name="name" required><br>
+        <label>Number: </label><input type="number" name="age" min="0" max="100" step="5"><br>
+        <label>Password: </label><input type="password" name="password"><br>
+        <label>Range: </label><input type="range" min="0" max="100"><br>
+        <label>Color: </label><input type="color"><br>
+        <label>E-mail: </label><input type="email"><br>
+        <label>Url: </label><input type="url"><br>
+        <label>Date: </label><input type="date"><br>
+        <label>Week: </label><input type="week"><br>
+        <label>Month: </label><input type="month"><br>
+        <label>Checkbox: </label><input type="checkbox"><input type="checkbox"><br>
+        <label>Radio: </label><input type="radio" name="escolha"><input type="radio" name="escolha"><br>
+        <label>Hidden: </label><input type="hidden"><br>
+        <label>File: </label><input type="file" multiple><br>
+        <label>Search: </label><input type="search" multiple><br>
+        <label>Button: </label><input type="submit" name="button" value="Enviar"><br>
+    </form>
+    <h2>Exemplo de Checkbox e Radio</h2>
+    <form method="get">
+        <h3></h3>
+        <p>Quais Opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo<br>
+        <input type="checkbox" name="opcional[]" value="bacon"> + bacon<br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola<br>
+        <input type="checkbox" name="opcional[]" value="tomate" disabled> + tomate<br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim"> Sim<br>
+        <input type="radio" name="borda" value="nao"> Não<br>
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante<br>
+        <input type="radio" name="bebida" value="suco" disabled> Suco<br>
+        <input type="radio" name="bebida" value="agua"> Água<br>
+        <input type="radio" name="bebida" value="nenhum"> Nenhum<br>
+        <p>Observações</p>
+        <textarea name="observacoes" rows="4" cols="40" placeholder="Digite aqui"></textarea><br>
+        
+        <button type="submit">Enviar pedido</button>
+    </form> 
+    <h2>Exemplos de Botão</h2>
+    <form method="get" onsubmit="">
+        <button type="button" onclick="alert('Botão clicado!')">Clique aqui</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+    <h2>Exemplo de Select</h2>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Cargo:</label>
+        <select name="role" multiple>
+            <optgroup label="Cargos" title="Cargos" >
+                <option value="administrativo">Administrativo</option>
+                <option value="gerente">Gerente</option>
+                <option value="diretor">Diretor</option>
+                <option selected value="presidente">Presidente</option>
+            </optgroup>
+        </select><br>
+        <label>Assunto:</label><input type="text" name="subject"><br>
+        <button type="submit">Enviar</button>
+    </form>
+  
+
+</body>
+</html>
