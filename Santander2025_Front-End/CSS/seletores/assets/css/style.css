@@ -1,0 +1,72 @@
+/* * {
+    font-style: italic;
+}
+
+h1 {
+    background-color: darkblue;
+    color: lightgreen;
+}
+
+div {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+li {
+    background-color: white;
+    color: darkblue;
+}
+
+#boas-vindas {
+    background-color: red;
+    color: white;
+}
+
+#explicacao-seletores {
+    background-color: yellow;
+    color: darkblue;
+}
+
+.linha-seletores {
+    color: red;
+}
+
+.letra-maiuscula {
+    text-transform: uppercase;
+} */
+
+div.bar {
+    background-color: white;
+    border: 1px dashed black;
+    height: 1px;
+}
+
+div#streaming {
+    background-color: white;
+    color: black;
+    font-style: normal;
+}
+
+[title="Netflix"] {
+    color: red;
+}
+
+[title="HBO"] {
+    color: black;
+}
+
+[title~="Disney"] {
+    color: rgb(4, 70, 20);
+}
+
+[href^="https://"] {
+    background: lightyellow;
+}
+
+[href$="login"] {
+    background: lightblue;
+}
+
+[href*="link"] {
+    background: lightgreen;
+}
